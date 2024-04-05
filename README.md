@@ -21,6 +21,33 @@ This work incorporates configurations into the DB to improve the representation 
 
 # Repository 
 ```
-
-
+./ |-- DB------|-- Full DB --- *.xsf
+   |           |-- DB in batches --- *.xsf
+   |           |-- figures
+   |           |-- *.ipynb (analysis)
+   | 
+   |-- GSRD----|-- RS ----------|-- data (Rigid surface calculations)
+   |           |                |-- scripts
+   |           |                |-- *.ipynb (analysis)
+   |           |                |-- figures
+   |           |
+   |           |-- slabmotion --|-- data (slabmotion calculations)
+   |           |                |--*.ipynb (analysis)
+   |           |                |-- figures
+   |           |                 
+   |           |-- MD ----------|-- data (Molecular Dynamics calculations)
+   |                            |-- scripts
+   |                            |-- *.ipynb (analysis)
+   |                            |-- figures
+   |-- NNs-----|-- data (Neural Networks)
+   |           |-- *.ipynb (analysis)
+   |           |-- figures
+   |
+   |-- VdW-----|-- data (*xsf configurations / Neural Networks)
+   |           |-- *.ipynb (analysis)
+   |           |-- figures
+   |
+   |-- Sample_Inputs
+   |-- *.ipynb (aditional analysis)
+   |-- figures  
 ```
