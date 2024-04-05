@@ -1,0 +1,7 @@
+
+The following have been reloaded with a version change:
+  1) GCCcore/11.3.0 => GCCcore/12.2.0
+  2) binutils/2.38-GCCcore-11.3.0 => binutils/2.39-GCCcore-12.2.0
+  3) intel-compilers/2022.1.0 => intel-compilers/2022.2.0
+  4) zlib/1.2.12-GCCcore-11.3.0 => zlib/1.2.12-GCCcore-12.2.0
+
