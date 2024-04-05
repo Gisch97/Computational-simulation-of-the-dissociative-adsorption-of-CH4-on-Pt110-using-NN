@@ -1,0 +1,75 @@
+  !! CH4/Pt(110)(1x3 cell)    to perform simulation over slabmotion
+  51  5                                            !! number of surface atoms, number of mol atoms
+   4                                               !! number of molecular bonds
+   1 5                                             !! molecular atoms involved in each molecular bond 
+   2 5                                             !! molecular atoms involved in each molecular bond 
+   3 5                                             !! molecular atoms involved in each molecular bond 
+   4 5                                             !! molecular atoms involved in each molecular bond 
+   3                                               !! number of species  
+   Pt        H         C                       !! species symbol WARNING: This ORDER is mandatory !!!!
+   51        4         1                       !! quantity of each specie
+   0         0         0                       !! energy of a single atom of each specie (required from version 1.6.7)
+   195.080   1.000    12.011                   !! species masses
+    0.0000   0.0000   0.0000                   !! spegama_ph (friction coefficient to account for fluctuation from and dissipation to an IMPLICIT phonon bath)
++8.0400000000  +0.0000000000  +0.0000000000        !! supercell
++0.0000000000  +8.5277077811  +0.0000000000
++0.0000000000  +0.0000000000 +31.3702770415
+Cartesian                   Optiflag  Free Therm RTherm NumLayer ! Optim. al inicio| Mov. en dinamica|  Termostato |Leer conf iniciales de un archivo| num. de capa.   
+0.00000    0.00000    0.00000    F     F     F     F     9
+4.02000    0.00000    0.00000    F     F     F     F     9
+0.00000    2.84257    0.00000    F     F     F     F     9
+4.02000    2.84257    0.00000    F     F     F     F     9
+0.00000    5.68514    0.00000    F     F     F     F     9
+4.02000    5.68514    0.00000    F     F     F     F     9
+2.01000    4.26385    1.42128    F     F     F     F     8
+6.03000    4.26385    1.42128    F     F     F     F     8
+2.01000    1.42128    1.42128    F     F     F     F     8
+6.03000    1.42128    1.42128    F     F     F     F     8
+2.01000    7.10642    1.42128    F     F     F     F     8
+6.03000    7.10642    1.42128    F     F     F     F     8
+0.00001   -0.00002    2.82825    F     F     F     F     7
+4.01999   -0.00002    2.85718    F     F     F     F     7
+0.00001    2.84253    2.82812    F     F     F     F     7
+4.01999    2.84254    2.85707    F     F     F     F     7
+0.00001    5.68518    2.82816    F     F     F     F     7
+4.01999    5.68517    2.85710    F     F     F     F     7
+1.98341    1.42123    4.28867    F     F     F     F     6
+6.05656    1.42123    4.28867    F     F     F     F     6
+1.98341    4.26387    4.28859    F     F     F     F     6
+6.05656    4.26386    4.28859    F     F     F     F     6
+1.98341    7.10645    4.28870    F     F     F     F     6
+6.05656    7.10644    4.28870    F     F     F     F     6
+4.01998    2.84255    5.65839    F     F     F     F     5
+4.01998   -0.00001    5.65852    F     F     F     F     5
+4.01998    5.68514    5.65843    F     F     F     F     5
+0.00002    5.68519    5.71143    F     F     F     F     5
+0.00002    2.84252    5.71134    F     F     F     F     5
+0.00002   -0.00003    5.71160    F     F     F     F     5
+1.93233    7.10641    7.14275    T     T     T     T     4
+6.10764    7.10641    7.14275    T     T     T     T     4
+1.93231    4.26384    7.14253    T     T     T     T     4
+6.10766    4.26385    7.14254    T     T     T     T     4
+1.93232    1.42128    7.14268    T     T     T     T     4 
+6.10764    1.42128    7.14267    T     T     T     T     4
+4.01999    2.84254    8.38406    T     T     F     T     3
+4.01998   -0.00002    8.38419    T     T     F     T     3
+4.01998    5.68516    8.38409    T     T     F     T     3
+0.00002    5.68517    8.75599    T     T     F     T     3
+0.00002    2.84253    8.75595    T     T     F     T     3
+0.00002   -0.00002    8.75609    T     T     F     T     3
+1.98007    1.42127    9.99379    T     T     F     T     2
+6.05989    1.42127    9.99379    T     T     F     T     2
+1.98014    4.26384    9.99362    T     T     F     T     2
+6.05984    4.26385    9.99363    T     T     F     T     2
+1.98004    7.10642    9.99386    T     T     F     T     2
+6.05992    7.10642    9.99386    T     T     F     T     2
+4.01999   -0.00001   11.13486    T     T     F     T     1
+4.01998    2.84257   11.13482    T     T     F     T     1
+4.01998    5.68513   11.13482    T     T     F     T     1
+4.70206    3.54514   20.82225    T     T     F     F     
+3.43844    2.28156   20.82226    T     T     F     F     
+4.70195    2.28156   22.08593    T     T     F     F
+3.43813    3.54527   22.08577    T     T     F     F
+4.07026    2.91328   21.45408    T     T     F     F
+
+

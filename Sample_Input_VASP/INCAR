@@ -1,0 +1,46 @@
+  SYSTEM=Pt110
+
+# Electronic minimization
+  ENCUT = 400.00  ! Energy cutoff in eV
+  VOSKOWN = 1     ! corrections when using GGA. 0 (no) | 1 (yes)
+  NELMIN=4        ! minimum number of electronic SC steps
+
+# Smearing
+  ISMEAR = 1    ! -5 (tetrahedron) | -4 (tetrahedron) | -3 (loop) | -2 (partial occupancies) | 0 (gaussian) | N (Methfessel-Paxton)
+  SIGMA = 0.1   ! smearing width in eV
+
+# Initialization
+  ISTART = 0    ! Use existing WAVECAR. 0 (NO) | 1 (YES)
+  ISPIN = 1     ! Spin polarized. 1 (NO) | 2 (YES)
+
+# Convergence 
+#  EDIFFG = -0.01  ! break condition for the electronic SC-loop. Default 1E-4
+#  NSW=500         ! maximum number of ionic steps
+#  IBRION = 0      ! Ionic relaxation (RMM-DIIS)
+#  POTIM = 10
+#  SMASS = 0
+#  ISIF =2
+#  MDALGO = 2
+#  TEBEG = 300
+#  ISYM = 0
+
+# Algorithms
+#  ALGO = Fast
+   LREAL = Auto
+
+# Paralelization
+  NPAR=1
+#  KPAR=4
+
+# SRP Functional
+  GGA = SR
+  PARAM1 = 0.32
+
+# Files to write
+  LWAVE = .FALSE.
+  LCHARG = .FALSE.
+
+# vdW DF
+ LUSE_VDW = .TRUE.
+ AGGAC = 0.0000
+ LASPH = .TRUE.

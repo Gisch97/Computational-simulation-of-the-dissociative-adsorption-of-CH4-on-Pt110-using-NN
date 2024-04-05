@@ -1,0 +1,17 @@
+TRAININGSET "PtCH4_DB_NN5_04082023.train" 
+TESTPERCENT   5
+ITERATIONS   50000
+MAXENERGY -2.431
+
+TIMING
+SAVE_ENERGIES
+
+METHOD
+bfgs
+
+NETWORKS
+! atom   network              hidden
+! types  file-name            layers  nodes:activation
+  Pt       Pt.10t-10t.ann      2      10:tanh 10:tanh
+  H        H.10t-10t.ann       2      10:tanh 10:tanh
+  C        C.10t-10t.ann       2      10:tanh 10:tanh

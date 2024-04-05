@@ -1,0 +1,26 @@
+ANN
+1   	----> nstart: the first trajectory to integrate                                                         
+300 	----> nend:   the final trajectory to integrate #1000 para 3try
+1  0.0  0.0  0.6  ----> in_dir,einput. If in_dir= 1, einput=Ex,Ey,Ez (eV);if in_dir=2 or =3, einput = theta,phi,Ez (deg,deg,eV) (if in_dir=3 phi is read but not used and chosen randomly for each traj.)
+0.0002	----> h0: Integration time step (ps)                                                                    
+50000   ----> nstmin : Pasos para hacer hasta la configuracion de Equilibrium
+1	    ----> tsup: Total integration time (ps)                                                                 
+9       ----> zin: Initial molecule CM height (relative to surface in eq.) (Ang)                                
+1.55    ----> rts: Equilibrium Bond length at the Transition State (Ang)                                        
+2.2	    ----> dcmTS: Center of mass distance to the closest surface atom at the TS (Ang)                        
+-0.4    ----> minener: Minimum meaningful potential energy
+999   	----> temp: surface Temp (K), to perform MD the thermalized input is required (slabmotion.in) (Rigid Surface if T<0)     
+1       ----> termostato: 1=Berendsen (spegama read from systemdata.in, not used in this case); 2=Langevin (tau read below, not used in this case)
+2	    ----> tau: Berendsen thermostat coupling constant (ps)                                                  
+0.001	----> eps: energy variation warning eV (for NVE MD)                                                     
+1	    ----> initial impact site: 1: random sampling of x,y    2: x,y values provided below fixed              
+0.  0. 	----> Initial x,y impact parameter (Direct coord)                                               
+0.5 	----> zstop: if positive, write trajectory info when this Z value is reached by the CM (Ang)            
+0.0     ----> erot: initial random rotational energy (eV)                                                       
+F F F F F F T T T T T T T T T   ---> vibswitch: turn on or off the modes (as ordered in nmode.res)              
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   ---> vibstate: excited state for the mode                                       
+-1  	---->  Target Vibrational energy in cm-1 (use calculated if negative)                                  
+F       ---->  includelongrangeZ
+F       ---->  includevdW
+F 1.0	---->  no_dyn_coup
+F 2000	---->  trajs_write, traj_write_interval 

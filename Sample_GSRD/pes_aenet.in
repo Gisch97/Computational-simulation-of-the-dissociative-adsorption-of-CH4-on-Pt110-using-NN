@@ -1,0 +1,12 @@
+3    			    ! number of different atomic species in the system (example C and O: enter 2)	  
+Pt 51			    ! 1st atomic specie in the system and number of atoms presents (put in the same order that appears in cgf)
+H 4	    		    ! 2nd atomic specie in the system (put in the same order that appears in configuration)
+C 1		        	! 3nd atomic specie in the system (put in the same order that appears in configuration)
+Pt.10t-10t.ann		! name of neural networks atom 1  (put in the same order that appears in configuration)
+H.10t-10t.ann		! name of neural networks atom 2  (put in the same order that appears in configuration)
+C.10t-10t.ann		! name of neural networks atom 3  (put in the same order that appears in configuration)
+ 1                                                               ! lattice vector factor
+ 8.0400000000  0.0000000000  0.0000000000                        ! 1st lattice vector in cartesian
+ 0.0000000000  8.5277077811  0.0000000000                        ! 2nd lattice vector in cartesian
+ 0.0000000000  0.0000000000  31.3702770415                       ! 3rd lattice vector in cartesian
+ 
