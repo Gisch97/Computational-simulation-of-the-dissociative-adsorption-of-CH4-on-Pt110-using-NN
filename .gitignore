@@ -2,7 +2,7 @@
 DB/**/*!.ipynb
 NN/*!.ipynb
 GSRD/**/
-GSRD/*!.ipynb
+GSRD/**!.ipynb
 VdW/**/
 VdW/*!.ipynb
 **/*.ann*
