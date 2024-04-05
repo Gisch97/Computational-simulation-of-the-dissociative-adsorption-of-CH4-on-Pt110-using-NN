@@ -58,6 +58,8 @@ Finally, the obtained final potential was used in MD simulations to evaluate its
 It satisfactorily described the movement of the atoms on the platinum Pt(110) surface up to a surface temperature (kinetic energy of surface atoms) Ts = 750K, which was the maximum temperature used in training.
 The NNP was also evaluated for the CH4/Pt(110) interaction system, considering molecules with incident energies between 0.4eV and 1.4eV, with the surface atoms fixed in their minimum energy position and also allowing them to move from that position considering surface temperatures of 0K, 50K, 300K, and 550K.
 The obtained results regarding molecular trajectories, probabilities of molecular and dissociative adsorption, reflection probability, times associated with different events, and molecule-surface distance are within the same orders of magnitude and exhibit similarity with results from other works. 
+## Cites
+cites are in the file: `bibliography.bib`
 The validity range of the NNP for the CH4/Pt(110) system could be extended, being able to describe the effect of surface temperature on different observables, concluding that the probability of dissociative adsorption increases with temperature, while the probability of molecular adsorption decreases within the temperature range used.
 
 This work incorporates configurations into the DB to improve the representation of surface movement, thus providing a new tool based on a regressor model capable of describing a dynamic as complex as that of the studied system.
